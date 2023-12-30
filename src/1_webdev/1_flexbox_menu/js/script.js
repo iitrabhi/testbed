@@ -54,3 +54,13 @@ function showSuggestions(list){
         allList[0].classList.add("hover"); // add "active" class to the first element
     }
 }
+
+const iosToggle = document.getElementById('ios-toggle');
+
+iosToggle.addEventListener('change', function() {
+    if(this.checked) {
+        document.body.classList.add('dark-mode');
+    } else {
+        document.body.classList.remove('dark-mode');
+    }
+});
