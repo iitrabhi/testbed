@@ -1,0 +1,10 @@
+{
+	"nodes":[
+		{"id":"8a03d7bd9d49cde4","x":-420,"y":-200,"width":1000,"height":230,"type":"text","text":"main container"},
+		{"id":"501c414c01a17750","x":-400,"y":-115,"width":960,"height":135,"type":"text","text":"nav-container"},
+		{"id":"497299fe6c5383ca","x":-380,"y":-47,"width":280,"height":60,"type":"text","text":"item 1"},
+		{"id":"0a355cff5d9c7726","type":"text","text":"item 3","x":240,"y":-47,"width":310,"height":60},
+		{"id":"0900560c4644add2","type":"text","text":"item 2","x":-80,"y":-47,"width":300,"height":60}
+	],
+	"edges":[]
+}
