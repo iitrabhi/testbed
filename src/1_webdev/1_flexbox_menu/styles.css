@@ -1,7 +1,6 @@
-/* Background Styles */
 html {
   height: 200vh;
-  background-color: #577c87;
+  background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
   justify-content: flex-start; /*👉Main axis👈*/ /*👉Row👈*/
@@ -15,7 +14,7 @@ body {
 .nav-container {
   display: flex;
   position: relative;
-  background-color: rgba(247, 247, 247, 0.342);
+  background-color: rgb(255, 255, 255);
   width: 1200px;
   max-width: 1200px;
   align-self: center;
@@ -28,6 +27,7 @@ body {
   flex: 1;
   position: relative;
   margin: 6px;
+
   /* border: 1px dotted #000; */
 }
 
@@ -49,6 +49,17 @@ body {
 .flexbox-item-2 {
   align-self: center;
   justify-content: center; /* Aligns child content to the center */
+  flex-direction: column;
+}
+
+.search-results{
+    min-width: 130%;
+    position: absolute;
+    top: 100%;
+    background: #fff;
+    align-self: flex-start;
+    padding: 16px;
+    border: 1px solid #ccc;
 }
 
 .flexbox-item-3 {
@@ -68,15 +79,19 @@ body {
 }
 
 .nav-items:hover {
-  background-color: #2e6f3e;
+  color: #000000;
+  font-weight: bold;
 }
 
 .nav-items:active {
-  background-color: #1f4a28;
+  color: #000000;
+  font-weight: bold;
 }
 
 .nav-logo {
   display: flex;
+  cursor: pointer;
+
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
@@ -88,12 +103,17 @@ body {
 
 .search-box {
   width: 100%;
-  height: 40px;
-  background-color: #e6e6e6;
-  color: #fff;
+  height: 44px;
+  background-color: #f6f6f6;
+  color: #1e1e1e;
   border-radius: 12px;
   border: none;
   padding: 0 16px;
+  font-size: 14px;
+}
+
+input::placeholder {
+  color: #bebebe; /* Replace with your desired color */
 }
 
 .nav-toggle {
@@ -105,6 +125,8 @@ body {
 }
 
 .nav-button {
+    cursor: pointer;
+
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -114,72 +136,108 @@ body {
   background-color: #2f68cb;
   text-transform: uppercase;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   border-radius: 8px;
 }
 
+.nav-button:hover {
+  background-color: #2f68cbaf;
+}
 
+/* Style the switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 32px;
+}
 
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
 
-  
-  /* Style the switch - the box around the slider */
-  .switch {
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 24px;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0000004f;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.switch input:checked + .slider {
+  background-color: #2f68cbaf;
+}
+
+.switch input:focus + .slider {
+  box-shadow: 0 0 1px #2f68cb;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(32px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.search-wrapper .search-results{
+    background: #fff;
+    padding: 0;
     opacity: 0;
-    width: 0;
-    height: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+    border-radius: 12px;
+    box-shadow: 0px 20px 25px -5px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
   }
   
-  /* The slider */
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: .4s;
-    border-radius: 24px;
+  .search-wrapper.active .search-results{
+    padding: 10px 8px;
+    opacity: 1;
+    margin-top: 20px;
+    pointer-events: auto;
   }
   
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 20px;
-    width: 20px;
-    left: 2px;
-    bottom: 2px;
-    background-color: white;
-    transition: .4s;
-    border-radius: 50%;
+  .search-results li{
+    list-style: none;
+    padding: 12px 12px;
+    display: none;
+    cursor: default;
+    border-radius: 6px;
+    color: #808080;
   }
   
-  input:checked + .slider {
-    background-color: #2196F3;
+  .search-wrapper.active .search-results li{
+    display: block;
   }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
-    transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
+  .search-results li:hover{
+    background: #E5F1FF;
+    color: #006BE6;
   }
   

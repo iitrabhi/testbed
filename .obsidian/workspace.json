@@ -181,6 +181,9 @@
   },
   "active": "73b378923bee4f68",
   "lastOpenFiles": [
+    "src/1_webdev/1_flexbox_menu/js/suggestions.js",
+    "src/1_webdev/1_flexbox_menu/js/script.js",
+    "src/1_webdev/1_flexbox_menu/js",
     "src/1_webdev/1_flexbox_menu/canvas.canvas",
     "scripts/1_validation/1_no_crevasse/__pycache__/helpers.cpython-36.pyc",
     "scripts/1_validation/1_no_crevasse/__pycache__",
@@ -193,8 +196,6 @@
     "admin/readme.md",
     "admin/idp.md",
     "admin/architecture.canvas",
-    "admin/1_base_papers/1_theo.pdf",
-    "scripts/1_validation/1_no_crevasse/mesh/ice.h5",
     "scripts/1_validation/1_no_crevasse/readme.md",
     "scripts/1_validation/1_no_crevasse/understanding _glaciers.md",
     "scripts/1_validation/1_no_crevasse/attachments/Pasted image 20231227142215.png",
