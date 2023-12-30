@@ -11,14 +11,12 @@
             "id": "73b378923bee4f68",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "src/1_webdev/1_flexbox_menu/canvas.canvas",
-                "viewState": {
-                  "x": 0,
-                  "y": 0,
-                  "zoom": 0
-                }
+                "file": "src/1_webdev/readme.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
               }
             }
           }
@@ -88,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/1_webdev/1_flexbox_menu/canvas.canvas",
+                "file": "src/1_webdev/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "src/1_webdev/1_flexbox_menu/canvas.canvas",
+                "file": "src/1_webdev/readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/1_webdev/1_flexbox_menu/canvas.canvas"
+                "file": "src/1_webdev/readme.md"
               }
             }
           },
@@ -179,12 +177,17 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "73b378923bee4f68",
+  "active": "01f9f9c6e9f233c4",
   "lastOpenFiles": [
+    "src/5_python/readme.md",
+    "src/4_electron/readme.md",
+    "src/3_node/readme.md",
+    "src/2_react/readme.md",
+    "src/1_webdev/1_flexbox_menu/canvas.canvas",
+    "src/1_webdev/readme.md",
     "src/1_webdev/1_flexbox_menu/js/suggestions.js",
     "src/1_webdev/1_flexbox_menu/js/script.js",
     "src/1_webdev/1_flexbox_menu/js",
-    "src/1_webdev/1_flexbox_menu/canvas.canvas",
     "scripts/1_validation/1_no_crevasse/__pycache__/helpers.cpython-36.pyc",
     "scripts/1_validation/1_no_crevasse/__pycache__",
     "scripts/1_validation/1_no_crevasse/helpers.py",
@@ -192,7 +195,6 @@
     "scripts/1_validation/1_no_crevasse/output/stress.xdmf",
     "scripts/1_validation/1_no_crevasse/output/solution.xdmf",
     "scripts/1_validation/1_no_crevasse/output/solution.h5",
-    "scripts/1_validation/1_no_crevasse/output",
     "admin/readme.md",
     "admin/idp.md",
     "admin/architecture.canvas",
@@ -225,10 +227,6 @@
     "scripts/3_stokes/readme.md",
     "scripts/2_dmc/readme.md",
     "scripts/1_validation/2_single_crevasse/readme.md",
-    "scripts/1_validation/readme.md",
-    "scripts/1_validation/4_buoyancy/readme.md",
-    "scripts/1_validation/3_multiple_crevasse/readme.md",
-    "scripts/Untitled.md",
     "plan.canvas",
     "3_our_implementation/2_paper_problems/1_calibration/Untitled.canvas",
     "4_latex_source/paper structure.canvas"
